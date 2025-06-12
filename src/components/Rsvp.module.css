@@ -1,0 +1,33 @@
+/* src/components/Rsvp.module.css */
+.rsvpSection {
+  padding: 100px 40px;
+  text-align: center;
+  background-color: var(--bg-page);
+}
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+/* ... 나머지 RSVP CSS 코드 (버튼, 인풋 등) ... */
+
+.form { max-width: 500px; margin: 0 auto; text-align: left; }
+.formGroup { margin-bottom: 25px; }
+.formGroup label { display: block; font-weight: 500; margin-bottom: 8px; }
+.formGroup input[type="text"],
+.formGroup input[type="number"],
+.formGroup textarea {
+  width: 100%; border: 1px solid var(--border-color); border-radius: 8px;
+  padding: 12px 15px; font-size: 16px; font-family: inherit;
+}
+.radioGroup { display: flex; gap: 20px; }
+.radioGroup label { display: flex; align-items: center; gap: 8px; }
+.submitButton {
+  width: 100%; padding: 15px; border: none; border-radius: 8px;
+  background-color: var(--accent-primary); color: white;
+  font-size: 16px; font-weight: 600; cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.submitButton:hover { background-color: #0066cc; }
+.thankYouMessage { padding: 40px 0; }
+.thankYouMessage h2 { font-size: 24px; margin-bottom: 15px; }

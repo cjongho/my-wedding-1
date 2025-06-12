@@ -1,0 +1,29 @@
+/* src/components/Message.module.css */
+.messageSection {
+  padding: 120px 40px; /* 상하 여백을 대폭 늘림 */
+  text-align: center;
+  background-color: var(--bg-page);
+}
+.sectionTitle {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+.mainMessage {
+  font-size: 20px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 50px;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.names {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+.names strong {
+  font-weight: 600;
+}

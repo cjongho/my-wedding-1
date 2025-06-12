@@ -1,0 +1,133 @@
+/* src/components/Guestbook.module.css (API 랜덤 아바타 최종 버전) */
+
+.guestbook {
+  padding: 100px 40px;
+  text-align: center;
+  background-color: var(--bg-page); /* 다른 섹션과 구분되도록 배경색 변경 */
+}
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.form {
+  max-width: 500px;
+  margin: 0 auto 40px auto;
+}
+
+/* --- 랜덤 아바타 생성기 스타일 --- */
+.avatarGenerator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.avatarPreview {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* 원형으로 표시 */
+  overflow: hidden;
+  margin-bottom: 15px;
+  background-color: #e8e8e8;
+  border: 4px solid white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.avatarPreview img {
+  width: 100%;
+  height: 100%;
+}
+.randomButton {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  background-color: white;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.randomButton:hover {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+}
+/* --- 랜덤 아바타 생성기 끝 --- */
+
+.input, .textarea {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  background-color: white;
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 16px;
+  font-family: inherit;
+  margin-bottom: 15px;
+}
+.textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+.submitButton {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--accent-primary);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.entries {
+  margin-top: 40px;
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.entry {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* --- 등록된 글의 아바타 스타일 --- */
+.avatar {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+}
+.entryContent {
+  flex-grow: 1;
+}
+/* --- 아바타 스타일 끝 --- */
+
+.entryHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.entryHeader strong {
+  font-weight: 600;
+  font-size: 16px;
+}
+.timestamp {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+.entry p {
+  color: var(--text-primary);
+  line-height: 1.6;
+}

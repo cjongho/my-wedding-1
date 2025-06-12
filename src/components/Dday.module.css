@@ -1,0 +1,31 @@
+/* src/components/Dday.module.css */
+.ddayContainer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.ddayTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 15px;
+}
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+.timeUnit span {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.timeUnit p {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
