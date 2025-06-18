@@ -1,29 +1,40 @@
-/* src/components/Message.module.css */
+/* src/components/Message.module.css (동화 컨셉) */
+
 .messageSection {
-  padding: 120px 40px; /* 상하 여백을 대폭 늘림 */
+  padding: 120px 40px; /* 상하 여백을 대폭 늘려 여유로운 느낌을 줍니다. */
   text-align: center;
-  background-color: var(--bg-page);
+  /* index.css에서 정의한 따뜻한 아이보리 배경색을 사용합니다. */
+  background-color: var(--color-bg); 
+  border-bottom: 1px solid var(--border-color); /* 다른 섹션과 구분되는 옅은 경계선 */
 }
+
 .sectionTitle {
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 36px;
+  font-weight: 600; /* '고운 돋움' 폰트는 굵게 해도 부드럽습니다. */
   color: var(--text-primary);
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
+
 .mainMessage {
-  font-size: 20px;
-  line-height: 1.8;
+  font-size: 18px;
+  /* 행간을 넓혀 가독성을 높이고 부드러운 느낌을 줍니다. */
+  line-height: 1.9; 
   color: var(--text-secondary);
   margin-bottom: 50px;
-  max-width: 580px;
+  /* 텍스트가 너무 길어지지 않도록 최대 너비를 제한하여 안정감을 줍니다. */
+  max-width: 580px; 
   margin-left: auto;
   margin-right: auto;
+  white-space: pre-wrap; /* 줄바꿈(\n)이 적용되도록 합니다. */
 }
+
 .names {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.8;
   color: var(--text-primary);
 }
+
 .names strong {
-  font-weight: 600;
+  /* 이름 부분을 조금 더 강조합니다. */
+  font-weight: 600; 
 }

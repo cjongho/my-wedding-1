@@ -1,31 +1,38 @@
-/* src/components/Gift.module.css */
+/* src/components/Gift.module.css (동화 컨셉) */
 .giftSection {
   padding: 100px 40px;
   text-align: center;
+  background-color: var(--color-bg);
   border-bottom: 1px solid var(--border-color);
 }
 .title {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .accountGroup {
-  background-color: var(--bg-page);
-  padding: 20px;
-  border-radius: 12px;
+  background-color: var(--color-container-bg);
+  padding: 30px;
+  border-radius: 16px;
   margin-bottom: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .accountGroup h3 {
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-align: left;
 }
 .accountItem {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--color-bg);
 }
 .accountItem span {
   font-size: 15px;
@@ -38,9 +45,11 @@
   background-color: white;
   color: var(--text-primary);
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: var(--font-main);
   transition: all 0.2s ease;
 }
-.accountItem button:active {
-  transform: scale(0.95);
+.accountItem button:hover {
+  border-color: var(--accent-pink);
+  color: var(--accent-pink);
 }
