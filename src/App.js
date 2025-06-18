@@ -1,6 +1,7 @@
 // src/App.js
 import './App.css';
 import Header from './components/Header';
+import Animation from './components/Animation'; // 새로 추가
 import Message from './components/Message';
 import Gallery from './components/Gallery';
 import Location from './components/Location'; // 추가
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Animation /> {/* 헤더 바로 아래에 배치 */}
       <Message />
       <Gallery />
       <Location />

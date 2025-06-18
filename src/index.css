@@ -1,13 +1,20 @@
 /* src/index.css */
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 
 :root {
-  --text-primary: #1d1d1f;
-  --text-secondary: #6e6e73;
-  --bg-primary: #ffffff;
-  --bg-page: #f5f5f7;
-  --accent-primary: #007aff;
-  --border-color: #d2d2d7;
+  /* 폰트 */
+  --font-main: 'Gowun Dodum', sans-serif;
+
+  /* 색상 팔레트 */
+  --color-bg: #FFFBF7; /* 전체 페이지 배경: 따뜻한 아이보리 */
+  --color-container-bg: #FFFFFF; /* 청첩장 카드 배경: 깨끗한 흰색 */
+  --text-primary: #4A4A4A; /* 기본 텍스트: 부드러운 다크 그레이 */
+  --text-secondary: #8B8B8B; /* 보조 텍스트: 연한 그레이 */
+  --accent-pink: #FF9A9A; /* 포인트 색상 1: 부드러운 코랄 핑크 */
+  --accent-lavender: #E6D4FF; /* 포인트 색상 2: 연한 라벤더 */
+  --border-color: #F0EBE6; /* 경계선 색상: 베이지 톤 */
+  --shadow-color: rgba(188, 172, 153, 0.15); /* 그림자 색상: 따뜻한 톤 */
 }
 
 * {
@@ -17,18 +24,21 @@
 }
 
 body {
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
-  background-color: var(--bg-page);
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--text-primary);
+  line-height: 1.7; /* 행간을 조금 더 넓혀 편안하게 */
+  word-break: keep-all; /* 단어가 잘리지 않도록 */
 }
 
 .App {
-  max-width: 700px; /* 최대 너비를 살짝 늘려서 안정감 부여 */
-  margin: 40px auto; /* 위아래 여백 추가 */
-  background-color: var(--bg-primary);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.08); /* 그림자를 더 부드럽게 */
-  border-radius: 20px; /* 모서리를 더 둥글게 */
-  overflow: hidden; /* 내부 요소가 모서리를 벗어나지 않도록 */
+  max-width: 640px;
+  margin: 50px auto;
+  background-color: var(--color-container-bg);
+  border-radius: 24px; /* 모서리를 더 둥글게 */
+  overflow: hidden;
+  box-shadow: 0 10px 35px var(--shadow-color); /* 그림자를 더 부드럽고 넓게 */
+  border: 1px solid white; /* 입체감을 위한 미세한 테두리 */
 }
