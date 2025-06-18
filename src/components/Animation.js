@@ -18,8 +18,9 @@ const Animation = () => {
        </motion.h2>
        <div className={styles.videoContainer}>
         <iframe 
-          src="https://www.youtube.com/embed/Fa8BF0uH_HM?si=0pAASWbJ4ULaKnaE?autoplay=1&mute=1" 
-          title="YouTube video player" 
+          className={styles.videoPlayer}
+          src={`https://www.youtube.com/embed/Fa8BF0uH_HM?si=B0ZChDgXCONFCVjV?autoplay=1&mute=1?cc_load_policy=1`}
+          title="Our Wedding Story" 
           frameBorder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
           referrerPolicy="strict-origin-when-cross-origin" 
